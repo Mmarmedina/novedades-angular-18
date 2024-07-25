@@ -1,11 +1,14 @@
 <div class="container d-flex justify-content-center mt-5">
     <mat-card class="example-card">
         <mat-card-header>
+            <!-- Uso de inputs signals: nombre y apellido -->
             <mat-card-title>{{nombre()}} {{apellido()}}</mat-card-title>
             <mat-card-subtitle>Es un prestigioso programador de tan solo {{edad()}} años de edad</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
+            <!-- Uso de signal texto. -->
             <p>{{texto()}}</p>
+            <!-- Uso de signal generada con computed() -->
             <p>En 5 años tendrá {{edadEn5Anios()}}</p>
         </mat-card-content>
         <mat-card-actions>
